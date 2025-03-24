@@ -8,3 +8,5 @@ xelatex resume.tex
 You will need to have `xelatex` installed on your machine.
 
 Alternatively, you can use a site like [ShareLaTeX](https://sharelatex.com) to build and edit your LaTeX instead.
+
+Generate PDF **xelatex resume.tex** 
