@@ -58,68 +58,83 @@
 	\cventry
 	{}
 	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
-		Lenguajes:  & {\skill{ Python, R, PHP, Java, JavaScript, NodeJS, TypeScript, SQL, PL/SQL, HTML, CSS}} \\
-		Frameworks:  & {\skill{ Django, Fast Api, React, Astro, Spring, Spring Boot.}} \\
-		Bases de Datos:  & {\skill{ MySQL, PostgreSQL, SQL Server, SQLite, Redis.}} \\
-		Tecnologías / Herramientas: \hspace{0.05cm} & {\skill{ Linux, Docker, Caprover, pipenv, Celery, npm, Git, GitHub Actions, Api Rest, Kafka.}} \\
-		Practicas:  & {\skill{ Agile, Principios SOLID,, Microservicios, DDD, Testing, Event Driven Architecture.}} \\
+		Lenguajes:  & {\skill{ Python, R, SQL, Java, JavaScript, TypeScript, HTML, CSS}} \\
+		Frameworks/Librerías:  & {\skill{ Django, FastAPI, Pandas, Apache Airflow, React, Spring Boot}} \\
+		Bases de Datos:  & {\skill{ PostgreSQL, MySQL, Snowflake, Redis, SQLite}} \\
+		Cloud y Herramientas: & {\skill{ AWS (Lambda, SNS, EC2, S3), Azure, Docker, Git, Metabase}} \\
+		Herramientas de Datos: & {\skill{ Airflow, Astronomer, Kafka, Celery, ETL Pipelines, MCP Servers}} \\
+		Metodologías:  & {\skill{ Agile, Microservicios, DDD, Event Driven Architecture, Data Engineering}} \\
 		\end{tabular}}}
 	{}
 	{}
 	{}
 \end{cventries}
 \vspace{-7mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cvsection{Expeciencia}
+\cvsection{Experiencia}
 \begin{cventries}
 	\cventry
-	{Desarrollador Fullastack - Freelance}
+	{Sports Data Engineer - Freelance}
 	{Club Universidad de Chile - Departamento D+I}
 	{Santiago, Chile}
-	{Septiempre 2024 – Actualmente}
+	{Septiembre 2024 – Actualmente}
 	{\begin{cvitems}
 		\vspace{0.5mm}
-		\item {Construir una plataforma web de centralización y visualización de datos de las distintas áreas para el departamento de desarrollo e innovación. Desarrollado con Django y Javascript, desplegado en Azure con Docker y Caprover.}
-		\item {Automatizar la carga y migración de datos desde Excel a Bases de datos en Postgres, reduciendo el tiempo del proceso de traspaso de datos en un 90\%.}
+		\item {Desarrollar pipelines de datos ETL para extracción automatizada de estadísticas de jugadores desde fuentes como Wyscout, integrándolos en bases de datos PostgreSQL para análisis avanzado y toma de decisiones deportivas.}
+		\item {Implementar integración de Large Language Models en procesos de scouting mediante servidores MCP, automatizando análisis de jugadores y generación de reportes técnicos con IA.}
+		\item {Desplegar y configurar servidor de Metabase en Microsoft Azure para migración de reportes desde PowerBI, estableciendo conexiones directas a bases de datos propias y mejorando visualización de datos.}
+		\item {Construir plataforma web de centralización y visualización de datos departamentales con Django, desplegada en Azure usando Docker y Caprover para gestión de contenedores.}
 		\end{cvitems}}
 
 	\cventry
-	{Desarrollador Fullastack}
+	{Desarrollador Full Stack}
 	{Agencia de Marketing Digital IdeasPro}
-	{Talca Chile}
+	{Talca, Chile}
 	{Marzo 2022 – Febrero 2025}
 	{\begin{cvitems}
 		\vspace{0.5mm}
-		\item {Liderar un equipo de 4 personas en los desarrollos de los distintos proyectos de software para los clientes de la empresa.}
-		\item {Diseñar y Desarrollar una plataforma para la gestión de datos administrativos y clinicos para empresas de Radiografías Dentales. Agilizando el proceso de atención y gestion de pacientes en un 50\%, utilizando tecnologías como php y java con Spring Boot.}
-		\item {Diseñar, Desarrollar y Desplegar una plataforma de gestión de ordenes de trabajos de impresión 3D para una empresa de impresiones 3D dentales. Utilizando Django, NodeJS, React, PostgreSQL, Docker y desplegado en Digital Ocean.}
-		\item {Desarrollar Páginas web para distintos clientes de la empresa. Utilizando Astro, React, NodeJS y desplegadas en Vercel.}
+		\item {Liderar equipo de 4 desarrolladores en proyectos de software para clientes, gestionando arquitectura técnica y entrega de soluciones escalables.}
+		\item {Diseñar y desarrollar plataforma de gestión de datos administrativos y clínicos para empresas de radiografías dentales, optimizando procesos de atención en 50\% utilizando PHP y Java con Spring Boot.}
 		\end{cvitems}}
 
-	\cventry
-	{Desarrollador Fullastack - Freelance}
-	{Servicios Postales}
-	{Talca, Chile}
-	{Enero 2022 – Agosto 2022}
-	{\begin{cvitems}
-		\vspace{0.5mm}
-		\item {Desarrollar una plataforma web para la gestión de envíos de paquetes y cartas. Desarrollado con PHP, Javascript y MySQL.}
-		\end{cvitems}}
 \end{cventries}
 
-\cvsection{Proyectos}
+\cvsection{Proyectos Destacados}
 \begin{cventries}
 	\vspace{-3mm}
 	\cventry
 	{}
-	{Plataforma de apuestas deportivas \vspace{-5mm}}
-	{Java, TypeScript, Kafka, Microservicios, DDD, Docker \vspace{-5mm}}
+	{Pipeline de Datos Ligas Europeas \vspace{-5mm}}
+	{Apache Airflow, Snowflake, Astronomer, Python \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-		\item {Para fines didácticos, desarrollé una plataforma de apuestas deportivas para poner en práctica conepctos como DDD, Microservicios y arquitectura basada en eventos. 
-		\newline \faLink\ \href{https://github.com/Daniher01/bets-app}{https://github.com/Daniher01/bets-app}}
+		\item {Pipeline ETL que automatiza extracción y carga de estadísticas de 7 ligas europeas. Procesamiento paralelo usando Task Groups en Airflow, reduciendo tiempo de 50+ minutos a ~12 minutos con carga a data warehouse Snowflake.
+		\newline \faLink\ \href{https://github.com/Daniher01/european-football-pipeline}{https://github.com/Daniher01/european-football-pipeline}}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Soccer Analytics MCP \vspace{-5mm}}
+	{Python, MCP Server, Pandas, FastMCP \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Implementé el modelo estadístico DatAzul como servidor MCP para análisis y recomendación de jugadores de fútbol. Sistema que permite a LLMs como Claude analizar jugadores basándose en estadísticas objetivas con 8 posiciones configuradas.
+		\newline \faLink\ \href{https://github.com/Daniher01/soccer-analytics-mcp}{https://github.com/Daniher01/soccer-analytics-mcp}}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Weather Forecast System \vspace{-5mm}}
+	{AWS Lambda, EventBridge, SNS, Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Sistema automatizado de alertas meteorológicas con arquitectura serverless. Pipeline de datos que consume APIs meteorológicas y distribuye notificaciones usando EventBridge y SNS, con reducción de costos del 80\% vs. infraestructura tradicional.
+		\newline \faLink\ \href{https://github.com/Daniher01/weather-forecast}{https://github.com/Daniher01/weather-forecast}}
 	\end{cvsectionnormaltext}}
 
 	\vspace{-3mm}
@@ -129,19 +144,19 @@
 	{R, Shiny App, StatsBomb \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-		\item {Realicé una plataforma con datos y métricas avanzadas de statsbomb donde permite buscar jugadores y ver similitudes entre ellos.
+		\item {Plataforma analítica con datos de StatsBomb para búsqueda de jugadores y análisis de similitudes. Implementación de algoritmos de clustering y visualización interactiva para scouting deportivo.
 		\newline \faLink\ \href{https://dhernandezm.shinyapps.io/scouting_app/}{https://dhernandezm.shinyapps.io/scouting\_app/}}
 	\end{cvsectionnormaltext}}
-	
+
 	\vspace{-3mm}
 	\cventry
 	{}
-	{Gestión de Filas \vspace{-5mm}}
-	{Django, Javascript, Docker, PostgreSQL, WebSocket \vspace{-5mm}}
+	{Sistema Gestión Datazul \vspace{-5mm}}
+	{Django, Docker, PostgreSQL, Azure \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-		\item {Desarrollé una plataforma para la gestión de filas de pacientes. Siendo principalente para aprender a implementar websockets par la comunicación a tiempo real entre clientes. 
-		\newline \faLink\ \href{https://github.com/Daniher01/gestion_filas}{https://github.com/Daniher01/gestion\_filas}}
+		\item {Plataforma web para centralización y visualización de datos deportivos. Sistema desplegado con Docker y base de datos PostgreSQL en Azure, incluyendo automatización de carga desde Excel y APIs externas.
+		\newline \faLink\ \href{https://www.datazul.cl/}{https://www.datazul.cl/}}
 	\end{cvsectionnormaltext}}
 	
 	\vspace{-5mm}
@@ -152,16 +167,36 @@
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{4mm}
-\cvsection{Educación}
+\cvsection{Educación y Certificaciones}
 \begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{La Pizarra del DT \vspace{-5mm}}
+	{Certificación Internacional \vspace{-5mm}}
+	{2023 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{Curso Big Data en el Fútbol - Análisis Avanzado de Datos Deportivos}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{La Pizarra del DT \vspace{-5mm}}
+	{Certificación Internacional \vspace{-5mm}}
+	{2023 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{Curso Visualización 2D en el Fútbol - Representación Gráfica de Datos}
+	\end{cvsectionnormaltext}}
+
 	\vspace{-3mm}
 	\cventry
 	{}
 	{CFT San Agustín \vspace{-5mm}}
 	{Talca, Chile \vspace{-5mm}}
-	{2020- 2022 \vspace{-5mm}}
+	{2020 - 2022 \vspace{-5mm}}
 	{\begin{cvsectionnormaltext} 
-		\item{Analista Programador}
+		\item{Técnico en Análisis y Programación de Sistemas}
 	\end{cvsectionnormaltext}}
 \end{cventries}
 

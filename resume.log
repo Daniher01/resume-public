@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.3.5)  28 MAY 2025 17:58
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.3.5)  13 JUN 2025 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**resume.tex resumen.pdf
+**./resume.tex
 (resume.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -561,33 +561,33 @@ Package hyperref Info: Link coloring OFF on input line 44.
 \openout3 = `resume.out'.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 69.
+(Font)              scaled to size 10.00107pt on input line 70.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 69.
+(Font)              scaled to size 7.00075pt on input line 70.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 69.
+(Font)              scaled to size 5.00053pt on input line 70.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 69.
+(Font)              scaled to size 9.99893pt on input line 70.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 69.
+(Font)              scaled to size 6.99925pt on input line 70.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 69.
+(Font)              scaled to size 4.99947pt on input line 70.
 
-Overfull \hbox (266.19186pt too wide) in paragraph at lines 69--69
+Overfull \hbox (193.08444pt too wide) in paragraph at lines 70--70
 [][][]|  
  []
 
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 69.
+t line 70.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 69.
+t line 70.
 [1
 
-] (resume.aux)
+] [2] (resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -597,11 +597,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18659 strings out of 409617
- 336401 string characters out of 5774217
- 1956191 words of memory out of 5000000
+ 336403 string characters out of 5774217
+ 1955191 words of memory out of 5000000
  40532 multiletter control sequences out of 15000+600000
  559577 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,15n,114p,558b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,15n,114p,548b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.pdf (1 page).
+Output written on resume.pdf (2 pages).
