@@ -1,0 +1,196 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Daniel} \headerlastnamestyle{Hernandez} \\
+	{Desarrollador de software orientado a solucionnes de datos aplicadas al fútbol} \\
+	\vspace{2mm}
+	{\hspace{0.8cm}\faEnvelope\ daniher02@gmail.com}  |  {\faMobile\ (+34) 744786798}  |  {\faMapMarker\ Málaga, España} 
+	\newline {\faLink\ \href{https://www.linkedin.com/in/dhernandez-dev/}{https://www.linkedin.com/in/dhernandez-dev/}}
+\end{center}
+
+\cvsection{Habilidades}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Lenguajes:  & {\skill{ Python, R, SQL, Java, JavaScript, TypeScript, HTML, CSS}} \\
+		Frameworks/Librerías:  & {\skill{ Django, FastAPI, Pandas, PySpark, Apache Airflow, React, Spring Boot}} \\
+		Bases de Datos:  & {\skill{ PostgreSQL, MySQL, Snowflake, Redis, SQLite}} \\
+		Cloud y Herramientas: & {\skill{ AWS (Lambda, SNS, EC2, S3), Azure, Docker, Git, Metabase}} \\
+		Herramientas de Datos: & {\skill{ Airflow, Astronomer, Kafka, Celery, ETL Pipelines, MCP Servers}} \\
+		Metodologías:  & {\skill{ Agile, Microservicios, DDD, Event Driven Architecture, Data Engineering}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-7mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experiencia}
+\begin{cventries}
+	\cventry
+	{Sports Data Engineer - Freelance}
+	{Club Universidad de Chile - Departamento D+I}
+	{Santiago, Chile}
+	{Septiembre 2024 – Actualmente}
+	{\begin{cvitems}
+		\vspace{0.5mm}
+		\item {Desarrollar pipelines de datos ETL para extracción automatizada de estadísticas de jugadores desde fuentes como Wyscout, integrándolos en bases de datos PostgreSQL para análisis avanzado y toma de decisiones deportivas.}
+		\item {Implementar integración de Large Language Models en procesos de scouting mediante servidores MCP, automatizando análisis de jugadores y generación de reportes técnicos con IA.}
+		\item {Desplegar y configurar servidor de Metabase en Microsoft Azure para migración de reportes desde PowerBI, estableciendo conexiones directas a bases de datos propias y mejorando visualización de datos.}
+		\item {Construir plataforma web de centralización y visualización de datos departamentales con Django, desplegada en Azure usando Docker y Caprover para gestión de contenedores.}
+		\end{cvitems}}
+
+	\cventry
+	{Desarrollador Full Stack}
+	{Agencia de Marketing Digital IdeasPro}
+	{Talca, Chile}
+	{Marzo 2022 – Febrero 2025}
+	{\begin{cvitems}
+		\vspace{0.5mm}
+		\item {Liderar equipo de 4 desarrolladores en proyectos de software para clientes, gestionando arquitectura técnica y entrega de soluciones escalables.}
+		\item {Diseñar y desarrollar plataformas de gestión de datos administrativos y clínicos para empresas de radiografías dentales, optimizando procesos de atención en 50\% utilizando PHP y Django.}
+		\item {Desarrollar páginas web informativas y de gestión de blogs para distintos cliente, destacando la del centro de formación CEC del maule.}
+		\end{cvitems}}
+
+\end{cventries}
+
+\cvsection{Proyectos de Análisis de Datos en Fútbol}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Pipeline de Datos Ligas Europeas \vspace{-5mm}}
+	{Apache Airflow, Snowflake, Astronomer, Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Pipeline ETL que automatiza extracción y carga de estadísticas de 7 ligas europeas. Procesamiento paralelo usando Task Groups en Airflow, reduciendo tiempo de 50+ minutos a ~12 minutos con carga a data warehouse Snowflake.
+		\newline \faLink\ \href{https://github.com/Daniher01/actualizacion_ligas_futbol}{https://github.com/Daniher01/european-football-pipeline}}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Agente IA como modelo de recomendación de Jugadores \vspace{-5mm}}
+	{Python, MCP Server, Pandas, FastMCP \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Implementé el modelo estadístico DatAzul como servidor MCP para análisis y recomendación de jugadores de fútbol. Sistema que permite a LLMs como Claude analizar jugadores basándose en estadísticas objetivas con 8 posiciones configuradas.
+		\newline \faLink\ \href{https://github.com/Daniher01/presentacion_mcp_scouting}{https://github.com/Daniher01/presentacion\_mcp\_scouting}}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Plataforma de Scouting de Jugadores \vspace{-5mm}}
+	{R, Shiny App, StatsBomb \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Plataforma analítica con datos de StatsBomb para búsqueda de jugadores y análisis de similitudes. Implementación de algoritmos de clustering y visualización interactiva para scouting deportivo.
+		\newline \faLink\ \href{https://dhernandezm.shinyapps.io/scouting_app/}{https://dhernandezm.shinyapps.io/scouting\_app/}}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Sistema Gestión Datazul \vspace{-5mm}}
+	{Django, Docker, PostgreSQL, Azure \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Plataforma web para centralización y visualización de datos deportivos. Sistema desplegado con Docker y base de datos PostgreSQL en Azure, incluyendo automatización de carga desde Excel y APIs externas.
+		\newline \faLink\ \href{https://www.datazul.cl/}{https://www.datazul.cl/}}
+	\end{cvsectionnormaltext}}
+
+		\vspace{-3mm}
+	\cventry
+	{}
+	
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{4mm}
+\cvsection{Educación y Certificaciones}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{La Pizarra del DT \vspace{-5mm}}
+	{Certificación Internacional \vspace{-5mm}}
+	{2023 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{Curso Big Data en el Fútbol - Análisis Avanzado de Datos Deportivos}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{La Pizarra del DT \vspace{-5mm}}
+	{Certificación Internacional \vspace{-5mm}}
+	{2023 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{Curso Visualización 2D en el Fútbol - Representación Gráfica de Datos}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{CFT San Agustín \vspace{-5mm}}
+	{Talca, Chile \vspace{-5mm}}
+	{2020 - 2022 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{Técnico en Análisis y Programación de Sistemas}
+	\end{cvsectionnormaltext}}
+\end{cventries}
+
+\end{document}
